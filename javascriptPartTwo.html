@@ -7,10 +7,15 @@
     </style>
   </head>
   <body>
-
+    <p id="text">Please enter your name</p>
+    <input type="text" id="input"/>
+    <button id="button">Enter</button>
 
     <script type="text/javascript">
-
+      document.getElementById("button").onclick = function() {
+        var textEntered = document.getElementById("input").value;
+        document.getElementById("text").innerHTML = "Hello, " + textEntered;
+      }
     </script>
   </body>
 </html>
