@@ -6,10 +6,14 @@
   <body>
     <p id="text">Hello World</p>
     <button id="myButton">Change Text</button>
-    <p id="2ndParagraph">javascript is...</p>
+    <p id="2ndParagraph">JavaScript is...</p>
     <button id="2ndButton">Append Text</button>
     <p id="empty"></p>
     <button id="emptyButton">Create Text</button>
+    <p id="style">A paragraph</p>
+    <button id="styleButton">Style Text</button>
+    <p id="wipe">A paragraph to disappear</p>
+    <button id="wipeButton">Disappear Text</button>
 
     <script type="text/javascript">
       document.getElementById("myButton").onclick = function() {
@@ -21,6 +25,15 @@
       document.getElementById("emptyButton").onclick = function() {
         document.getElementById("empty").innerHTML = "Nathan is great";
       }
+      document.getElementById("styleButton").onclick = function() {
+        document.getElementById("style").style.color = "red";
+        document.getElementById("style").style.fontSize = "50px";
+        document.getElementById("style").style.fontFamily = "Arial";
+      }
+      document.getElementById("wipeButton").onclick = function() {
+        document.getElementById("wipe").style.display = "none";
+      }
+
     </script>
   </body>
 </html>
